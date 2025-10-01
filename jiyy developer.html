@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Linktree Ungu - Jiyy Developer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Particles.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <style>
+    /* Custom purple gradient background for buttons */
+    .btn-purple {
+      background: linear-gradient(90deg, #7e22ce, #a855f7);
+    }
+    .btn-purple:hover {
+      background: linear-gradient(90deg, #a855f7, #7e22ce);
+    }
+
+    /* Fullscreen particles background */
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      top: 0;
+      left: 0;
+      background: black;
+    }
+
+    /* Content container above particles */
+    #content {
+      position: relative;
+      z-index: 10;
+    }
+  </style>
+</head>
+<body class="bg-black min-h-screen flex flex-col items-center justify-center px-4">
+
+  <!-- Particles background -->
+  <div id="particles-js"></div>
+
+  <!-- Content above particles -->
+  <div id="content" class="max-w-md w-full text-center space-y-8">
+
+    <!-- Profile Section -->
+    <div>
+      <img src="ftprofil.png" alt="Jiyy Developer profile" class="mx-auto rounded-full w-32 h-32 border-4 border-purple-600" />
+      <h1 class="mt-4 text-4xl font-bold text-purple-400">Jiyy Developer</h1>
+      <p class="text-purple-300 mt-1">Linktree Ungu dengan Background Hitam</p>
+    </div>
+
+    <!-- Links Section -->
+    <div class="space-y-4">
+      <a href="https://www.tiktok.com/@candes4e?_t=ZS-90Auxdq483t&_r=1" target="_blank" rel="noopener noreferrer"
+         class="btn-purple text-white font-semibold py-3 rounded-lg block shadow-lg transition duration-300">
+        TOKTOK
+      </a>
+      <a href="https://www.instagram.com/jiyyeazy?igsh=MTl2NWFodGp6cmQ5dg==" target="_blank" rel="noopener noreferrer"
+         class="btn-purple text-white font-semibold py-3 rounded-lg block shadow-lg transition duration-300">
+        INSTAGRAM
+      </a>
+      <a href="https://t.me/AjiEazy_EXE" target="_blank" rel="noopener noreferrer"
+         class="btn-purple text-white font-semibold py-3 rounded-lg block shadow-lg transition duration-300">
+        TELEGRAM
+      </a>
+      <a href="https://www.facebook.com/profile.php?id=61573493402529" target="_blank" rel="noopener noreferrer"
+         class="btn-purple text-white font-semibold py-3 rounded-lg block shadow-lg transition duration-300">
+        FACEBOOK
+      </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-12 text-purple-600 text-sm">
+      © 2025 Jiyy Developer
+    </footer>
+  </div>
+
+  <script>
+    /* Particles.js config for connected particles */
+    particlesJS("particles-js", {
+      "particles": {
+        "number": {
+          "value": 60,
+          "density": {
+            "enable": true,
+            "value_area": 800
+          }
+        },
+        "color": {
+          "value": "#a855f7"
+        },
+        "shape": {
+          "type": "circle",
+          "stroke": {
+            "width": 0,
+            "color": "#000000"
+          }
+        },
+        "opacity": {
+          "value": 0.6,
+          "random": false,
+          "anim": {
+            "enable": false
+          }
+        },
+        "size": {
+          "value": 3,
+          "random": true,
+          "anim": {
+            "enable": false
+          }
+        },
+        "line_linked": {
+          "enable": true,
+          "distance": 150,
+          "color": "#a855f7",
+          "opacity": 0.4,
+          "width": 1
+        },
+        "move": {
+          "enable": true,
+          "speed": 2,
+          "direction": "none",
+          "random": false,
+          "straight": false,
+          "out_mode": "bounce",
+          "bounce": true,
+          "attract": {
+            "enable": false
+          }
+        }
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": {
+            "enable": true,
+            "mode": "grab"
+          },
+          "onclick": {
+            "enable": true,
+            "mode": "push"
+          },
+          "resize": true
+        },
+        "modes": {
+          "grab": {
+            "distance": 140,
+            "line_linked": {
+              "opacity": 0.7
+            }
+          },
+          "push": {
+            "particles_nb": 4
+          }
+        }
+      },
+      "retina_detect": true
+    });
+  </script>
+</body>
+</html>
